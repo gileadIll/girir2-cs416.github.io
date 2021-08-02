@@ -189,7 +189,7 @@ function updateAppl() {
     .enter().append("circle")               
         .attr("r", 1)   
         .attr("cx", function(d) { return x(d.date); })     
-        .attr("cy", function(d) { return y(d.Close); })   
+        .attr("cy", function(d) { return y(d.ratio); })   
         .on("mouseover", function(d) {    
             div.transition()    
                 .duration(200)    
@@ -310,7 +310,7 @@ function updateCisco() {
       .enter().append("circle")               
           .attr("r", 1)   
           .attr("cx", function(d) { return x(d.date); })     
-          .attr("cy", function(d) { return y(d.Close); })   
+          .attr("cy", function(d) { return y(d.ratio); })   
           .on("mouseover", function(d) {    
               div.transition()    
                   .duration(200)    
